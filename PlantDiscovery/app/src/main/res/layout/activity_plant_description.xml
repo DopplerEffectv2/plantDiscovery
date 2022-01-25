@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flowerDescLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424040"
+    tools:context=".PlantDescriptionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewFleur"
+                android:layout_width="match_parent"
+                android:layout_height="263dp"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/orchidee" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/nomFleur"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:background="#545C61"
+                android:gravity="center"
+                android:text="nomFleur"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#D6D3D3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:id="@+id/TextViewDesc"
+                android:layout_width="329dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Couleurs : blanc - jaune - mauve - rose - rouge. Saisonnalité : juillet à octobre au jardin - mai à octobre chez le fleuriste. Histoire : utilisé à des fins alimentaires - le dahlia a été classé comme un légume jusqu’au début du XIXe siècle. Langage des fleurs : débordant d’énergie - le dahlia illustre l’abondance et la générosité. Occasions : amour - anniversaire - mariage - pour le plaisir - remerciements."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="138dp">
+
+                <Button
+                    android:id="@+id/knowMoreButton"
+                    android:layout_width="270dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="@drawable/custom_button"
+                    android:onClick="wikipedia1"
+                    android:text="En savoir plus"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

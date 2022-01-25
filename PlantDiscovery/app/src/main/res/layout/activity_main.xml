@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454141"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4E4A4A"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#545C61">
+
+
+                <TextView
+                    android:id="@+id/appPrez"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Bienvenue dans l'application PlantDiscovery !"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/orchidee"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/dahlia"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/hibiscus"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/jacinthes"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/marguerite"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/muguet"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/arum"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/rose"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="descActivity"
+                app:srcCompat="@drawable/tulipe"
+                tools:layout_conversion_absoluteHeight="465dp"
+                tools:layout_conversion_absoluteWidth="409dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/musicButton2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/roundedbutton"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
